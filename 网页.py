@@ -120,7 +120,7 @@ st.markdown('<div class="title">浦东新区监测站交通污染预测</div>', 
 
 # 加载XGBoost模型
 try:
-    model = joblib.load('XGBoost2020.pkl')
+    model = joblib.load('PN_XGBoost2020.pkl')
 except Exception as e:
     st.write(f"<div style='color: red;'>Error loading model: {e}</div>", unsafe_allow_html=True)
     model = None
